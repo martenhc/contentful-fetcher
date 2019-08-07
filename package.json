@@ -1,0 +1,16 @@
+{
+  "name": "gather-content-fetcher",
+  "version": "0.0.1",
+  "description": "Fethes content from GatherContent and transforms it into a JSON file that can be used in MUBAN",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin Termini",
+  "license": "MIT",
+  "dependencies": {
+    "contentful": "^7.9.1",
+    "fs-extra": "^8.1.0",
+    "to-slug-case": "^1.0.0"
+  }
+}
