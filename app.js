@@ -24,7 +24,7 @@ console.time('fetch');
 
 client.getLocales().then(({items}) => {
   items.forEach(({code}) => {
-    fs.ensureDirSync(`./${code}`);
+    fs.ensureDirSync(`./localization/${code}`);
 
     client.getEntries({
       locale: code,
@@ -47,7 +47,7 @@ client.getLocales().then(({items}) => {
           return componentsObject;
         }, {});
 
-        fs.outputFile(`./${code}/${name}.json`, JSON.stringify(components, null, 2));
+        fs.outputFile(`./localization/${code}/${name}.json`, JSON.stringify(components, null, 2));
       })
     });
   });
